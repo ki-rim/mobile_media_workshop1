@@ -1,0 +1,54 @@
+/*
+There are two sections in this CSS. First sets up the default style, and the second creates an alternative style for when width is less than 480px.
+*/
+
+
+body {
+    background-color: #FFF;
+    color: #000;
+    padding: 20px;
+    font-family:sans;
+    border: 1px solid #DDD
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+div{
+    width:100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li {
+     display: inline-block;
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+a {
+    display; inline;
+    background-color: #AAA;
+    padding: 2px;
+    color: #FFF;
+    font-family:monospace;
+}
+
+@media only screen and (max-width: 480px) {
+
+    
+    nav ul li {
+	display: block;
+	margin: 0 0 3px 0;
+    }
+}
+
+/*Try multiple width breaks for different devices */
